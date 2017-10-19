@@ -2,3 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
+.banner{
+    height: 120px;
+}
+
+.banner a{
+    background: url("../img/banner.jpg") no-repeat center 0;
+    height: 120px;
+    display: block;
+}
