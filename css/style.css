@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 .banner{
     height: 120px;
 }
@@ -11,4 +19,85 @@
     background: url("../img/banner.jpg") no-repeat center 0;
     height: 120px;
     display: block;
+}
+
+.nav{
+    background: #333;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 1226px;
+    margin: 0 auto;
+    /*height: 40px;*/
+}
+.main-nav{
+    /*overflow: hidden;*/
+}
+.main-nav li{
+    float:left;
+}
+
+.main-nav a{
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.main-nav span{
+    color: #424242;
+    margin: 0 5px;
+}
+
+
+.user-info{
+    float: right;
+}
+.user-info li{
+    float: left;
+}
+.user-info a{
+    color: #b0b0b0;
+    font-size: 12px;
+    line-height: 40px;
+}
+.user-info  span{
+    color: #424242;
+    margin: 0 5px;
+}
+.cart{
+    padding-right:20px ;
+    padding-left:20px ;
+}
+.cart li{
+    position: relative;
+}
+.cart a{
+   font-size: 12px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.cart:hover{
+    background: white;
+
+}
+.cart a:hover {
+    color: orange;
+}
+.cart a:hover i{
+    color: orange;
+}
+.cart-content{
+    width: 200px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    left: 1050px;
+    display: none;
+    border: 1px #b0b0b0 solid;
+
+}
+.cart:hover .cart-content{
+    display:block;
 }
