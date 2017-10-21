@@ -23,13 +23,14 @@ a{
 
 .nav{
     background: #333;
-    overflow: hidden;
+    height: 40px;
+    /*overflow: hidden;*/
 }
 
 .wrapper{
     width: 1226px;
     margin: 0 auto;
-    /*height: 40px;*/
+
 }
 .main-nav{
     /*overflow: hidden;*/
@@ -65,15 +66,19 @@ a{
     color: #424242;
     margin: 0 5px;
 }
-.cart{
-    padding-right:20px ;
-    padding-left:20px ;
+.main-nav li:hover a{
+    color: white;
 }
-.cart li{
+.user-info a:hover{
+    color:white;
+}
+.cart{
+    width: 120px;
     position: relative;
 }
 .cart a{
-   font-size: 12px;
+    text-align: center;
+    font-size: 12px;
     width: 100%;
     height: 100%;
     display: block;
@@ -82,22 +87,82 @@ a{
     background: white;
 
 }
-.cart a:hover {
-    color: orange;
+.nav .wrapper .user-info .cart a:hover {
+    color: #ff6700;
 }
-.cart a:hover i{
-    color: orange;
+.cart:hover i,.cart:hover a{
+    color: #ff6700;
 }
-.cart-content{
-    width: 200px;
-    height: 100px;
+.cart .cart-content{
+    width: 300px;
+    height: 0px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 100px;
     background: white;
     position: absolute;
-    left: 1050px;
-    display: none;
-    border: 1px #b0b0b0 solid;
+    top: 40px;
+    right: 0;
+    /*display: none;*/
+    overflow: hidden;
+    box-shadow:0 0 5px 1px rgba(0,0,0,0.1) ;
 
 }
 .cart:hover .cart-content{
     display:block;
+    animation: show 1s ease-in 0.5s forwards;
+}
+@keyframes show {
+    100%{
+        height: 100px;
+    }
+}
+.header{
+    background: white;
+    height: 100px;
+    position: relative;
+}
+
+.logo{
+    margin-top:22px;
+    width: 62px;
+    float: left;
+}
+
+.link-logo{
+    display: block;
+    width: 55px;
+    height: 55px;
+    background: url("../img/mi-logo.png") center center no-repeat #ff6700;
+}
+.main-menu{
+    float: left;
+    margin-left: 180px;
+}
+.menu-item{
+    float: left;
+    padding: 42px 0;
+
+}
+.menu-item a{
+    font-size: 16px;
+    color: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+.menu-item:hover a{
+    color: #ff6700;
+}
+.sub-menu{
+    position: absolute;
+    left: 0px;
+    top:100px;
+    background: red;
+    width: 100%;
+    display: none;
+}
+.menu-item:hover .sub-menu{
+    display: block;
 }
