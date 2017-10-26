@@ -160,7 +160,7 @@ a{
     position: absolute;
     left: 0px;
     top:100px;
-    background: red;
+    /*background: red;*/
     width: 100%;
     display: none;
 }
