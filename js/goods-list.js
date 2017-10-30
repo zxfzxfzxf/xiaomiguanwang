@@ -12,12 +12,19 @@ oLeft.onclick=function () {
     oRight.style.color='#b0b0b0';
     oRight.style.cursor='cursor';
 }
+
 oRight.onclick=function () {
     startmove(oGoods,-1240,-124);
     this.style.color='#e0e0e0';
     this.style.cursor='default';
     oLeft.style.color='#b0b0b0';
     oLeft.style.cursor='cursor';
+}
+oLeft.onmouseover=oRight.onmouseover=function () {
+    if(this.style.color=='#e0e0e0')
+    {
+        this.style.color='#ff6700';
+    }
 }
 function startmove(oGoods,target,speed) {
     clearInterval(timer);
@@ -27,13 +34,19 @@ function startmove(oGoods,target,speed) {
         }
         else {
             oGoods.style.marginLeft = oGoods.offsetLeft + speed + 'px';
-            console.log(oGoods.offsetLeft);
             if (oGoods.offsetLeft == target) {
                 clearInterval(timer);
             }
         }
-    },50);
+    },100);
 }
+
+setInterval(function () {
+    oRight.onclick()
+},4000);
+setInterval(function () {
+  oLeft.onclick()
+},8000);
 /**
  * Created by lenovo on 2017/10/28.
  */

@@ -23,6 +23,7 @@ border: 0;
     display: block;
 }
 
+
 .nav{
     background: #333;
     height: 40px;
@@ -259,4 +260,90 @@ border: 0;
     color: #616161;
     outline: 0;
 }
+.search-btn:hover{
+    background: #ff6700;
+}
 
+.foot-service{
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0
+}
+.foot-service li{
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    display: list-item;
+    border-left: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+.foot-service a{
+    color: #616161;
+}
+.foot-service i{
+    font-style: normal;
+}
+.foot-service .first{
+    border-left: 0px;
+}
+.foot-links{
+    padding: 40px 0;
+}
+.col-links{
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+}
+.col-links dt{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.col-links dd{
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.col-links a{
+    color: #757575;
+}
+.col-contact{
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.col-contact .iphone{
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.col-contact p{
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.iphone-btn{
+    /*border-color: #ff6700;*/
+    background: #fff;
+    color: #ff6700;
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ff6700;
+}
+.iphone-btn:hover{
+    background: #ff6700;
+    color: #ffffff;
+}
+.iphone-btn i{
+    font-style: normal;
+}

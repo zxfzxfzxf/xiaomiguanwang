@@ -59,3 +59,7 @@ function changeImg() {
         opacity: 100
     });
 }
+
+setInterval(function () {
+    oNext.onclick();
+},4000);
