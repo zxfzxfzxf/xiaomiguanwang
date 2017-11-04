@@ -363,6 +363,7 @@ color: black;
 .box-hd{
     position: relative;
     height: 58px;
+    margin-bottom: 5px;
 }
 .box-hd .title-2{
     margin: 0;
