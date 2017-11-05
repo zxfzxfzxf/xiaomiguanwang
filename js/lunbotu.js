@@ -63,3 +63,10 @@ function changeImg() {
 setInterval(function () {
     oNext.onclick();
 },4000);
+
+oPrev.onmouseover=oNext.onmouseover=function () {
+    this.style.background='rgba(0,0,0,0.6)';
+}
+oPrev.onmouseout=oNext.onmouseout=function () {
+    this.style.background='';
+}
