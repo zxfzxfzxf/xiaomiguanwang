@@ -1437,6 +1437,42 @@
         探索黑科技，小米为发烧而生
     </div>
 </div>
+<script>
+   var aMenu_item=document.getElementsByClassName('menu-item');
+   var aSub_menu=document.getElementsByClassName('sub-menu');
+   for(var i=0;i<aMenu_item.length;i++){
+       aMenu_item[i].index=i;
+       aMenu_item[i].onmouseover=function () {
+       aSub_menu[this.index].style.borderTop='1px solid #e0e0e0';
+       aSub_menu_show(aSub_menu[this.index],10,200);
+       }
+       aMenu_item[i].onmouseout=function () {
+           aSub_menu[this.index].style.borderTop='';
+           aSub_menu_show(aSub_menu[this.index],-10,0);
+       }
+   }
+  var sub_time=null;
+   function aSub_menu_show(obj,speed,target) {
+       clearInterval(sub_time);
+       sub_time=setInterval(function () {
+           if (obj.style.height==target+'px')
+           {
+               clearInterval(sub_time);
+           }
+           else{
+               obj.style.height= parseInt(getStyle(obj,'height'))+speed+'px';
+           }
+
+       },10);
+   }
+   function getStyle(elem, attr) {
+       if (elem.currentStyle) {//IE
+           return elem.currentStyle[attr];
+       } else {
+           return getComputedStyle(elem, false)[attr];
+       }
+   }
+</script>
 
 <script src="../js/jslib.js"></script>
 <script src="../js/lunbotu.js"></script>

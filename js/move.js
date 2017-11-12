@@ -23,7 +23,7 @@ for(var i=0;i<oTab_item.length;i++){
     oTab_item[i].onmouseover=function () {
         var oReview=this.getElementsByClassName('review-wrapper')[0];
         show(this,80,10);
-        this.style.top = aItem.offsetTop - 1 + 'px'
+        this.style.top = aItem.offsetTop - 1 + 'px';
         this.style.boxShadow='0 15px 30px rgba(0,0,0,0.1)';
     }
     oTab_item[i].onmouseout=function () {
@@ -45,7 +45,6 @@ function show(obj,target,speed) {
         else{
             oReview.style.height=oReview.offsetHeight+speed+'px';
         }
-
 
     },20);
 
